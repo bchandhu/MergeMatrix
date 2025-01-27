@@ -1,4 +1,5 @@
 // Bruteforce solution
+
 using System;
 using System.Collections.Generic;
 
