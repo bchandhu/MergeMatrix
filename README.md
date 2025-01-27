@@ -214,7 +214,7 @@ private void Dfs(int r, int c, bool[,] river, int[][] heights) {
 | **Redundancy**         | Revisits cells multiple times         | Avoids revisits with reachability matrices |
 | **Reusability**        | No reuse of intermediate results      | Reuses results through matrices         |
 | **Time Complexity**    | 0(4^(m*n))              | O(m × n)                     |
-| **Space Complexity**   | High due to recursion and visited arrays | \( O(m \times n) \)                     |
+| **Space Complexity**   | High due to recursion and visited arrays | O(m × n) for reachability matrices                    |
 | **Scalability**        | Poor, inefficient for large grids     | Highly scalable, efficient              |
 
 
