@@ -45,7 +45,9 @@ M Y Y Y Y
 ```
 ---
 
-## Approach 1(Brute Force): Backtracking
+## Approach 1(Brute Force): Backtracking 
+
+The file is `BackTracking.cs`
 
 This approach uses **backtracking** to explore all possible paths from each cell to determine if it can flow to the **Ganga River** (top/left boundary) or the **Yamuna River** (bottom/right boundary). The algorithm independently checks every cell in the grid.
 
@@ -96,6 +98,9 @@ private void Dfs(int[][] heights, int r, int c, int prevHeight, ref bool ganga, 
 ---
 
 ## Approach 2(Efficient Solution): Edge-Based Flow with DFS
+
+The file is `dfs.cs`
+
 The efficient solution leverages **Edge-Based Flow** and **Depth-First Search (DFS)** to determine the reachability of each cell to the Ganga and Yamuna rivers. The approach minimizes redundant computations by starting DFS from the **edges** of the grid and propagating water inward, ensuring each cell is processed only once for each river.
 
 ## Key Concept: Edge-Based Flow
